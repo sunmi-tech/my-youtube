@@ -1,16 +1,26 @@
-import Header from './Header'
-import Footer from './Footer'
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
-function Main (props){
-    return (
-    <>
-    <Header />
-    <main id="main" role="main">
+import Header from "./Header";
+import Footer from "./Footer";
+
+function Main(props) {
+  return (
+    <HelmetProvider>
+      <Helmet        
+        titleTemplate = "%s My Youtube"
+        defaultTitle = "My Youtube"
+        defer = {false}
+        >
+        {props.title &&<title>{props.title}</title>}
+      </Helmet>
+
+      <Header />
+      <main id="main" role="main">
         {props.children}
-    </main>
-    <Footer />
-    </>
-    )
+      </main>
+      <Footer />
+    </HelmetProvider>
+  );
 }
 
-export default Main
+export default Main;
