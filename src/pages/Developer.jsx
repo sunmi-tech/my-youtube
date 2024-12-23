@@ -1,5 +1,11 @@
+import Main from "../components/section/Main"
+
 function Developer (){
-    return <div>개발자</div>
+    return (
+    <Main>
+        개발자
+    </Main>
+    )
 }
 
 export default Developer

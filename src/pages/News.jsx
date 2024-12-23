@@ -1,5 +1,11 @@
+import Main from "../components/section/Main"
+
 function News (){
-    return <div>news</div>
+    return (
+    <Main>
+        news
+    </Main>
+    )
 }
 
 export default News

@@ -1,5 +1,11 @@
+import Main from "../components/section/Main"
+
 function Cat (){
-    return <div>cat</div>
+    return (
+        <Main>
+            cat
+        </Main>
+    )
 }
 
 export default Cat

@@ -1,5 +1,11 @@
+import Main from "../components/section/Main"
+
 function Home(){
-    return <div>홈</div>
+    return(
+        <Main>
+            홈
+        </Main>
+    ) 
 }
 
 export default Home

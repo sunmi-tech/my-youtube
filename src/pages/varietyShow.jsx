@@ -1,5 +1,11 @@
+import Main from "../components/section/Main"
+
 function VarietyShow (){
-    return <div>variety show</div>
+    return (
+    <Main>
+        variety show
+    </Main>
+    )
 }
 
 export default VarietyShow

@@ -1,5 +1,11 @@
+import Main from "../components/section/Main"
+
 function Channel(){
-    return <div>Channel</div>
+    return (
+    <Main>
+        Channel
+    </Main>
+    )
 }
 
 export default Channel

@@ -1,5 +1,11 @@
+import Main from "../components/section/Main"
+
 function Cooker(){
-    return <div>cooker</div>
+    return (
+    <Main>
+        cooker
+    </Main>
+    )
 }
 
 export default Cooker

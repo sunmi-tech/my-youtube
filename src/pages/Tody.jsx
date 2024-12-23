@@ -1,5 +1,11 @@
+import Main from "../components/section/Main"
+
 function Today(){
-    return <div>투데이</div>
+    return (
+    <Main>
+        투데이
+    </Main>
+    )
 }
 
 export default Today
